@@ -1,6 +1,6 @@
 # Webpack Boilerplate
 
-A minimalist Webpack boilerplate to use the latest JavaScript, and compile Sass into CSS.
+A minimalist Webpack boilerplate to use the latest JavaScript, compile Sass into CSS, and compile Typescript into JavaScript.
 
 ## Installation
 
@@ -44,10 +44,13 @@ npm i -D
   clean-webpack-plugin \
   css-loader \
   html-webpack-plugin \
+  mini-css-extract-plugin \
   node-sass \
   postcss-loader \
   sass-loader \
   style-loader \
+  ts-loader \
+  typescript \
   webpack \
   webpack-cli \
   webpack-dev-server \

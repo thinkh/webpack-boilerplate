@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "17fe5d7dc62af0c098e8";
+/******/ 	var hotCurrentHash = "8dc92b89b006ebf3fbb9";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -789,24 +789,24 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./src/index.js")(__webpack_require__.s = "./src/index.js");
+/******/ 	return hotCreateRequire("./src/index.ts")(__webpack_require__.s = "./src/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/style.scss":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/sass-loader/lib/loader.js??ref--6-2!./src/style.scss ***!
-  \***************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/assets/scss/style.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--7-1!./node_modules/sass-loader/lib/loader.js??ref--7-2!./src/assets/scss/style.scss ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(true);
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(true);
 // imports
 
 
 // module
-exports.push([module.i, "h1 {\n  font-family: monospace; }\n", "", {"version":3,"sources":["/Users/taniarascia/Sites/webpack/src/src/style.scss"],"names":[],"mappings":"AAEA;EACE,uBAHqB,EAItB","file":"style.scss","sourcesContent":["$font-family: monospace;\n\nh1 {\n  font-family: $font-family;\n}"],"sourceRoot":""}]);
+exports.push([module.i, "h1 {\n  font-family: monospace; }\n", "", {"version":3,"sources":["/Users/taniarascia/dev/repos/webpack-boilerplate/src/assets/scss/src/assets/scss/style.scss"],"names":[],"mappings":"AAEA;EACE,uBAHqB,EAItB","file":"style.scss","sourcesContent":["$font-family: monospace;\n\nh1 {\n  font-family: $font-family;\n}"],"sourceRoot":""}]);
 
 // exports
 
@@ -1407,59 +1407,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./src/components/Component.js":
-/*!*************************************!*\
-  !*** ./src/components/Component.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Component = function Component(tag) {
-  var text = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-  var id = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var className = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
-  var element = document.createElement(tag);
-  if (id) element.setAttribute('id', id);
-  if (className) element.classList.add(className);
-  element.textContent = text;
-  return element;
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Component);
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Component */ "./src/components/Component.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var hello = Object(_components_Component__WEBPACK_IMPORTED_MODULE_0__["default"])('h1', 'Hello, Webpack!', 'demo', 'main-heading');
-var root = document.getElementById('root');
-root.appendChild(hello);
-
-/***/ }),
-
-/***/ "./src/style.scss":
-/*!************************!*\
-  !*** ./src/style.scss ***!
-  \************************/
+/***/ "./src/assets/scss/style.scss":
+/*!************************************!*\
+  !*** ./src/assets/scss/style.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/style.scss");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/sass-loader/lib/loader.js??ref--7-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/assets/scss/style.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1473,13 +1429,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../node_modules/css-loader??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/style.scss", function() {
-		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-1!../node_modules/sass-loader/lib/loader.js??ref--6-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/style.scss");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/sass-loader/lib/loader.js??ref--7-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/assets/scss/style.scss", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/sass-loader/lib/loader.js??ref--7-2!./style.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/assets/scss/style.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1503,6 +1459,49 @@ if(true) {
 
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+
+/***/ "./src/components/Component.ts":
+/*!*************************************!*\
+  !*** ./src/components/Component.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const Component = (tag, text, id, className) => {
+    const element = document.createElement(tag);
+    if (id)
+        element.setAttribute('id', id);
+    if (className)
+        element.classList.add(className);
+    element.textContent = text;
+    return element;
+};
+exports.default = Component;
+
+
+/***/ }),
+
+/***/ "./src/index.ts":
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const Component_1 = __webpack_require__(/*! ./components/Component */ "./src/components/Component.ts");
+__webpack_require__(/*! ./assets/scss/style.scss */ "./src/assets/scss/style.scss");
+const hello = Component_1.default('h1', 'Hello, Webpack!', 'demo', 'main-heading');
+const root = document.getElementById('root');
+root.appendChild(hello);
+
 
 /***/ })
 

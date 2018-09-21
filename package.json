@@ -1,7 +1,7 @@
 {
   "name": "webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "Webpack boilerplate for Sass",
+  "version": "1.1.0",
+  "description": "Webpack 4 boilerplate: Babel, TypeScript, Sass, hot reload, and dev server",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -18,7 +18,8 @@
     "scss",
     "primitive-ui",
     "boilerplate",
-    "css"
+    "css",
+    "typescript"
   ],
   "author": "Tania Rascia",
   "license": "MIT",
@@ -36,9 +37,10 @@
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
-    "postcss-scss": "^2.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
+    "ts-loader": "^5.1.1",
+    "typescript": "^3.0.3",
     "webpack": "^4.18.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
