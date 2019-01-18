@@ -1,7 +1,7 @@
-import { Component } from './components/Component';
+import { SimpleComponent } from './components/SimpleComponent';
 import './assets/scss/style.scss';
 
-const hello = Component('h1', 'Hello, Webpack!', 'demo', 'main-heading');
+const hello = new SimpleComponent('h1', 'Hello, Webpack!', 'demo', 'main-heading');
 const root = document.getElementById('root');
 
-root.appendChild(hello);
+root.appendChild(hello.build());
