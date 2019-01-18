@@ -1,7 +1,8 @@
 
 export class SimpleComponent {
-  constructor(private tag: string, private text?: string, private id?: string, private className?: string) {
 
+  constructor(private tag: string, private text: string, private id?: string, private className?: string) {
+    // nothing
   }
 
   build(): HTMLElement {
