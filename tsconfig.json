@@ -1,8 +1,36 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es6",
-    "sourceMap": true
+    "importHelpers": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016.array.include",
+      "es2017.object"
+    ],
+    "declaration": false,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "stripInternal": true,
+    "esModuleInterop": true
   },
-  "exclude": ["node_modules"]
+  "compileOnSave": false,
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "src/**/*.d.ts"
+  ]
 }
