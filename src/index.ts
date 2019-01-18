@@ -1,7 +1,7 @@
-import Component from './components/Component'
-import './assets/scss/style.scss'
+import { Component } from './components/Component';
+import './assets/scss/style.scss';
 
-const hello = Component('h1', 'Hello, Webpack!', 'demo', 'main-heading')
-const root = document.getElementById('root')
+const hello = Component('h1', 'Hello, Webpack!', 'demo', 'main-heading');
+const root = document.getElementById('root');
 
-root.appendChild(hello)
+root.appendChild(hello);
