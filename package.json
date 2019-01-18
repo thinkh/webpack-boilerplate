@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "lint": "tslint -p tsconfig.json -c tslint.json && stylelint src/**/*.scss",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open"
   },
@@ -39,7 +40,13 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.4.4",
     "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-consistent-codestyle": "^1.15.0",
+    "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.2.4",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
