@@ -24,7 +24,7 @@ npm install
 
 > Note: This will not create or affect the `dist` build.
 
-Start development server on `localhost:3005`.
+Start development server on `localhost:8080`.
 
 ### npm run build
 
