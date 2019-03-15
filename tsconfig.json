@@ -27,6 +27,7 @@
   },
   "compileOnSave": false,
   "include": [
+    "typings.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
   ],
